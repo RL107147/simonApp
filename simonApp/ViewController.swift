@@ -1,24 +1,30 @@
-//
-//  ViewController.swift
-//  simonApp
-//
-//  Created by DHINGRA,GD GOLDY on 9/19/18.
-//  Copyright © 2018 DHINGRA,GD GOLDY. All rights reserved.
-//
 
 import UIKit
-
+import AVFoundation
 class ViewController: UIViewController {
 
+    @IBOutlet var colorViews: [UIView]!
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var colorsFrame: UIView!
+    
+    var sound: AVAudioPlayer?
+    var timer = Timer()
+    var pattern = [Int]()
+    var index = 0
+    var playerTurn = false
+    var gameOver = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func onStartButtonTapped(_ sender: UIButton) {
     }
+    @IBAction func onColorTapped(_ sender: UITapGestureRecognizer) {
+    }
+    
+  
 
 
 }

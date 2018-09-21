@@ -14,6 +14,12 @@
 		81BF4C452152BB020043037F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BF4C432152BB020043037F /* LaunchScreen.storyboard */; };
 		81BF4C502152BB030043037F /* simonAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF4C4F2152BB030043037F /* simonAppTests.swift */; };
 		81BF4C5B2152BB030043037F /* simonAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF4C5A2152BB030043037F /* simonAppUITests.swift */; };
+		81BF4C6E2152BBA70043037F /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 81BF4C682152BBA70043037F /* 3.wav */; };
+		81BF4C6F2152BBA70043037F /* hiscore.wav in Resources */ = {isa = PBXBuildFile; fileRef = 81BF4C692152BBA70043037F /* hiscore.wav */; };
+		81BF4C702152BBA70043037F /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 81BF4C6A2152BBA70043037F /* lose.wav */; };
+		81BF4C712152BBA70043037F /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 81BF4C6B2152BBA70043037F /* 1.wav */; };
+		81BF4C722152BBA70043037F /* 0.wav in Resources */ = {isa = PBXBuildFile; fileRef = 81BF4C6C2152BBA70043037F /* 0.wav */; };
+		81BF4C732152BBA70043037F /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 81BF4C6D2152BBA70043037F /* 2.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		81BF4C562152BB030043037F /* simonAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simonAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BF4C5A2152BB030043037F /* simonAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simonAppUITests.swift; sourceTree = "<group>"; };
 		81BF4C5C2152BB030043037F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81BF4C682152BBA70043037F /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
+		81BF4C692152BBA70043037F /* hiscore.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hiscore.wav; sourceTree = "<group>"; };
+		81BF4C6A2152BBA70043037F /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
+		81BF4C6B2152BBA70043037F /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
+		81BF4C6C2152BBA70043037F /* 0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 0.wav; sourceTree = "<group>"; };
+		81BF4C6D2152BBA70043037F /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,12 @@
 				81BF4C412152BB020043037F /* Assets.xcassets */,
 				81BF4C432152BB020043037F /* LaunchScreen.storyboard */,
 				81BF4C462152BB020043037F /* Info.plist */,
+				81BF4C6C2152BBA70043037F /* 0.wav */,
+				81BF4C6B2152BBA70043037F /* 1.wav */,
+				81BF4C6D2152BBA70043037F /* 2.wav */,
+				81BF4C682152BBA70043037F /* 3.wav */,
+				81BF4C692152BBA70043037F /* hiscore.wav */,
+				81BF4C6A2152BBA70043037F /* lose.wav */,
 			);
 			path = simonApp;
 			sourceTree = "<group>";
@@ -229,8 +247,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81BF4C732152BBA70043037F /* 2.wav in Resources */,
+				81BF4C6E2152BBA70043037F /* 3.wav in Resources */,
+				81BF4C722152BBA70043037F /* 0.wav in Resources */,
+				81BF4C712152BBA70043037F /* 1.wav in Resources */,
 				81BF4C452152BB020043037F /* LaunchScreen.storyboard in Resources */,
 				81BF4C422152BB020043037F /* Assets.xcassets in Resources */,
+				81BF4C702152BBA70043037F /* lose.wav in Resources */,
+				81BF4C6F2152BBA70043037F /* hiscore.wav in Resources */,
 				81BF4C402152BB020043037F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
