@@ -70,8 +70,17 @@
                                 <color key="textColor" red="0.95157689069999996" green="0.97990350810000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxD-Xu-uYZ">
-                                <rect key="frame" x="167" y="568" width="48" height="24"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0NF-os-9cO">
+                                <rect key="frame" x="162" y="137" width="53" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Rules"/>
+                                <connections>
+                                    <segue destination="QwP-Ml-4oG" kind="show" id="Z9R-yY-MkQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxD-Xu-uYZ">
+                                <rect key="frame" x="153" y="565" width="137" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.95157689069999996" green="0.97990350810000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -89,20 +98,59 @@
                         <outlet property="colorsFrame" destination="i7O-nR-Lgb" id="6hq-wp-6cm"/>
                         <outlet property="messageLabel" destination="KxD-Xu-uYZ" id="BhB-QN-8Fz"/>
                         <outlet property="startButton" destination="ABw-Lh-zEk" id="32N-zF-aqf"/>
-                        <outletCollection property="colorViews" destination="3rt-H1-jZY" collectionClass="NSMutableArray" id="Q28-zX-UBY"/>
-                        <outletCollection property="colorViews" destination="WUs-nR-AYk" collectionClass="NSMutableArray" id="92N-bd-Wxy"/>
-                        <outletCollection property="colorViews" destination="qlM-X3-8kg" collectionClass="NSMutableArray" id="THY-dJ-sjQ"/>
-                        <outletCollection property="colorViews" destination="r7I-qB-Wwr" collectionClass="NSMutableArray" id="bgc-2v-kFU"/>
+                        <outletCollection property="colorDisplays" destination="WUs-nR-AYk" collectionClass="NSMutableArray" id="vzw-YD-sVZ"/>
+                        <outletCollection property="colorDisplays" destination="3rt-H1-jZY" collectionClass="NSMutableArray" id="cZP-8d-TMZ"/>
+                        <outletCollection property="colorDisplays" destination="qlM-X3-8kg" collectionClass="NSMutableArray" id="P6n-iV-XRK"/>
+                        <outletCollection property="colorDisplays" destination="r7I-qB-Wwr" collectionClass="NSMutableArray" id="6Fs-oJ-xAt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="0xM-gI-Mq4">
                     <connections>
-                        <action selector="onColorTapped:" destination="BYZ-38-t0r" id="1i5-KY-VYy"/>
+                        <action selector="onColorTapped:" destination="BYZ-38-t0r" id="AkT-bu-Bny"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="445.60000000000002" y="91.304347826086968"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="B88-7Z-0hR">
+            <objects>
+                <viewController id="QwP-Ml-4oG" customClass="ViewController2" customModule="simonApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N5T-Ah-SQ9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="22" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5R-XS-MPJ">
+                                <rect key="frame" x="16" y="0.0" width="357" height="538"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">● A round in the game begins with the device illuminating a random color (and playing the accompanying sound).
+● The human player then responds by tapping that particular color (which the device lights up and plays the sound).
+● Then the device adds second random color to the sequence, and displays both of them (each for about a second, one after the other).
+● The human player then responds by tapping both colors in the appropriate order.
+● Play continues back and forth in this fashion, with another random color added by the device for each round of play.
+● Whenever the human player responds by tapping a color out of sequence (or taking too long to tap a color), the game ends.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmq-UC-t0W">
+                                <rect key="frame" x="159" y="532" width="74" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Go Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="XT4-m3-Tzd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BNd-Lq-8T3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qxq-xQ-HK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1093.5999999999999" y="90.404797601199405"/>
         </scene>
     </scenes>
 </document>
